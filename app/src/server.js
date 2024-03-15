@@ -19,10 +19,10 @@ io.on('connection', (socket) => {
         socket.join(room)
 
         // message for new user
-        socket.emit("server send message to client", FilterMessage(`Welcome to room ${room}`))
+        socket.emit("server send message to client", FilterMessage(`Welcome to room ${room}`, "Bot"))
 
         // message for other users
-        socket.broadcast.to(room).emit("server send message to client", FilterMessage(`${userName} has joined room ${room}`))
+        socket.broadcast.to(room).emit("server send message to client", FilterMessage(`${userName} has joined room ${room}`, "Bot"))
 
         //receive message
         socket.on("send message from client to server", (messageText) => {

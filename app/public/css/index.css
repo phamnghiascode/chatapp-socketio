@@ -9,6 +9,7 @@
 }
 
 .title-app {
+    position: fixed;
     height: 10vh;
     font-size: 60px;
     -webkit-background-clip: text;
@@ -23,27 +24,31 @@
     align-items: center;
 }
 
-.chat-app__wrapper {}
+.chatchit {
+    display: block;
+    width: 100%;
+    height: 150px;
+    position: fixed;
+    padding-top: 20px;
+    font-size: 64px;
 
-.chat-app__left {
-    display: flex;
-    justify-content: left;
-    align-items: center;
+    ;
 }
 
-.chat-app__image {
-    width: 90%;
+.chatchit span {
+    color: white;
 }
 
 .chat-app__right {
     padding: 30px 50px;
     border-radius: 20px;
     background-color: #ffffff;
+    opacity: 0.9;
 }
 
 .chat-app__title {
     text-align: center;
-    color: #e53434;
+    color: black;
 }
 
 .chat-app__title--line {
@@ -55,10 +60,23 @@
 }
 
 .chat-app__btn-join {
-    padding: 5px 10px;
-    background-color: #e53434;
+    background-color: black;
     color: #ffffff;
     border: none;
     border-radius: 10px;
     font-size: 30px;
+    transition: all .5s;
+    padding: 5px 20px;
+}
+
+.chat-app__btn-join:hover {
+    background-color: whitesmoke;
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
 }

@@ -1,14 +1,14 @@
 let usersList = [
-    {
-        id: 1,
-        userName: "Nghia Pham Trong",
-        room: "1"
-    },
-    {
-        id: 2,
-        userName: "Ha Trang Tran",
-        room: "2"
-    }
+    // {
+    //     id: 1,
+    //     userName: "Nghia Pham Trong",
+    //     room: "1"
+    // },
+    // {
+    //     id: 2,
+    //     userName: "Ha Trang Tran",
+    //     room: "2"
+    // }
 ]
 
 const addUser = (newUser) => {

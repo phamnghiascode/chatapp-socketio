@@ -88,15 +88,19 @@
 /* form send */
 .app__send-messages {
     height: 10vh;
+    border: none;
+
 }
 
 .form-messages {
     display: block;
     height: 100%;
+
 }
 
 .input-messages__wrapper {
     width: calc(100% - 200px);
+
 }
 
 .input-messages {
@@ -110,6 +114,9 @@
 .btn-send {
     width: 100px;
     font-size: 18px;
+    background-color: gray;
+    color: white;
+
 }
 
 .btn-location {
